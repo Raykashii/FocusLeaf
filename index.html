@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -27,11 +27,9 @@
       }
     }
   </script>
-
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body class="bg-cream font-sans text-forest min-h-screen">
 
   <!-- ========== LANDING PAGE ========== -->
@@ -42,108 +40,81 @@
       <div class="flex items-center gap-2 font-extrabold text-xl text-forest">
         🌿 FocusLeaf
       </div>
-
       <button onclick="showApp()" class="bg-sage text-white font-bold px-5 py-2 rounded-xl text-sm hover:bg-sageDark transition">
-        Buka Aplikasi →
+        Open App →
       </button>
     </nav>
 
     <!-- Hero -->
     <div class="flex flex-col items-center text-center px-6 pt-20 pb-14">
       <div class="text-6xl mb-5">🌿</div>
-
       <h1 class="text-5xl font-extrabold leading-tight mb-5">
-        Fokus lebih baik,<br>
-        <span class="text-sage">secara alami.</span>
+        Focus better,<br><span class="text-sage">naturally.</span>
       </h1>
-
       <p class="text-muted text-lg max-w-md mb-9 leading-relaxed">
-        Alat produktivitas bernuansa alam yang menenangkan. Timer Pomodoro,
-        manajemen tugas, dan inspirasi harian.
+        A calm, nature-inspired productivity tool. Pomodoro timer, task management, and daily inspiration — all in one place.
       </p>
-
       <button onclick="showApp()" class="bg-sage text-white font-bold px-9 py-4 rounded-2xl text-base shadow-lg hover:bg-sageDark transition">
-        Mulai Fokus 🌱
+        Start Focusing 🌱
       </button>
     </div>
 
-    <!-- Features -->
-    <div class="flex flex-wrap justify-center gap-5 px-6 pb-20">
-
-      <div class="bg-moss rounded-2xl p-7 max-w-xs text-center">
+    <!-- Features (CSS Grid) -->
+    <div class="features-grid px-6 pb-20">
+      <div class="bg-moss rounded-2xl p-7 text-center">
         <div class="text-4xl mb-3">⏱️</div>
-
-        <h3 class="font-bold text-lg mb-2">Timer Pomodoro</h3>
-
-        <p class="text-muted text-sm leading-relaxed">
-          Sesi fokus 25 menit dengan jeda pendek dan panjang otomatis.
-        </p>
+        <h3 class="font-bold text-lg mb-2">Pomodoro Timer</h3>
+        <p class="text-muted text-sm leading-relaxed">25-min focus sessions with short & long breaks built in.</p>
       </div>
-
-      <div class="bg-moss rounded-2xl p-7 max-w-xs text-center">
+      <div class="bg-moss rounded-2xl p-7 text-center">
         <div class="text-4xl mb-3">✅</div>
-
-        <h3 class="font-bold text-lg mb-2">Tugas Sesi</h3>
-
-        <p class="text-muted text-sm leading-relaxed">
-          Kelola daftar tugas dan pantau apa yang berhasil kamu selesaikan.
-        </p>
+        <h3 class="font-bold text-lg mb-2">Session Tasks</h3>
+        <p class="text-muted text-sm leading-relaxed">Manage your to-do list and track what you accomplish each session.</p>
       </div>
-
-      <div class="bg-moss rounded-2xl p-7 max-w-xs text-center">
+      <div class="bg-moss rounded-2xl p-7 text-center">
         <div class="text-4xl mb-3">💬</div>
-
-        <h3 class="font-bold text-lg mb-2">Quotes Harian</h3>
-
-        <p class="text-muted text-sm leading-relaxed">
-          Dapatkan quote motivasi baru secara langsung setelah sesi fokus selesai.
-        </p>
+        <h3 class="font-bold text-lg mb-2">Daily Quotes</h3>
+        <p class="text-muted text-sm leading-relaxed">Get fresh motivational quotes fetched live after every focus session.</p>
+      </div>
+      <div class="bg-moss rounded-2xl p-7 text-center">
+        <div class="text-4xl mb-3">💾</div>
+        <h3 class="font-bold text-lg mb-2">Auto Save</h3>
+        <p class="text-muted text-sm leading-relaxed">Tasks are saved locally so nothing is lost even after refresh.</p>
+      </div>
+      <div class="bg-moss rounded-2xl p-7 text-center">
+        <div class="text-4xl mb-3">🔔</div>
+        <h3 class="font-bold text-lg mb-2">Sound Alert</h3>
+        <p class="text-muted text-sm leading-relaxed">A gentle beep notifies you when each session ends.</p>
+      </div>
+      <div class="bg-moss rounded-2xl p-7 text-center">
+        <div class="text-4xl mb-3">📱</div>
+        <h3 class="font-bold text-lg mb-2">Responsive</h3>
+        <p class="text-muted text-sm leading-relaxed">Works seamlessly on desktop, tablet, and mobile devices.</p>
       </div>
     </div>
 
     <!-- How It Works -->
     <div class="bg-moss py-16 px-6 text-center">
       <h2 class="text-3xl font-extrabold mb-12">Cara Kerja</h2>
-
-      <div class="flex flex-wrap justify-center gap-10 max-w-2xl mx-auto">
-
+      <div class="flex flex-col items-center gap-10 max-w-xs mx-auto sm:flex-row sm:flex-wrap sm:justify-center sm:max-w-2xl">
         <div class="flex flex-col items-center gap-3 max-w-[160px]">
-          <div class="w-11 h-11 rounded-full bg-sage text-white font-extrabold text-lg flex items-center justify-center">
-            1
-          </div>
-
-          <p class="text-muted text-sm leading-relaxed">
-            Atur tugas yang ingin dikerjakan
-          </p>
+          <div class="w-11 h-11 rounded-full bg-sage text-white font-extrabold text-lg flex items-center justify-center">1</div>
+          <p class="text-muted text-sm leading-relaxed text-center">Atur tugas yang ingin dikerjakan</p>
         </div>
-
         <div class="flex flex-col items-center gap-3 max-w-[160px]">
-          <div class="w-11 h-11 rounded-full bg-sage text-white font-extrabold text-lg flex items-center justify-center">
-            2
-          </div>
-
-          <p class="text-muted text-sm leading-relaxed">
-            Mulai timer fokus selama 25 menit
-          </p>
+          <div class="w-11 h-11 rounded-full bg-sage text-white font-extrabold text-lg flex items-center justify-center">2</div>
+          <p class="text-muted text-sm leading-relaxed text-center">Mulai timer fokus selama 25 menit</p>
         </div>
-
         <div class="flex flex-col items-center gap-3 max-w-[160px]">
-          <div class="w-11 h-11 rounded-full bg-sage text-white font-extrabold text-lg flex items-center justify-center">
-            3
-          </div>
-
-          <p class="text-muted text-sm leading-relaxed">
-            Istirahat sejenak dan dapatkan inspirasi baru
-          </p>
+          <div class="w-11 h-11 rounded-full bg-sage text-white font-extrabold text-lg flex items-center justify-center">3</div>
+          <p class="text-muted text-sm leading-relaxed text-center">Istirahat sejenak dan dapatkan inspirasi baru</p>
         </div>
-
       </div>
     </div>
 
     <footer class="text-center py-7 text-muted text-sm">
-      Dibuat dengan 🌿 oleh FocusLeaf — Final Project Web Dev 2.0
+      Made with 🌿 by FocusLeaf — Final Project Web Dev 2.0
     </footer>
-
   </section>
 
   <!-- ========== APP PAGE ========== -->
@@ -151,15 +122,12 @@
 
     <!-- Navbar -->
     <nav class="flex justify-between items-center px-8 py-4 border-b border-mint">
-
       <div onclick="showLanding()" class="flex items-center gap-2 font-extrabold text-lg cursor-pointer hover:text-sage transition">
         🌿 FocusLeaf
       </div>
-
       <div class="bg-moss px-4 py-2 rounded-xl text-sm font-semibold text-muted">
-        🍅 <span id="sessionCount">0</span> sesi selesai
+        🍅 <span id="sessionCount">0</span> session(s) completed
       </div>
-
     </nav>
 
     <!-- Main Content -->
@@ -168,25 +136,16 @@
       <!-- Timer Column -->
       <div class="flex flex-col gap-4 flex-1 min-w-[300px]">
 
+        <!-- Mode Tabs -->
         <div class="flex bg-moss rounded-2xl p-1 gap-1">
-          <button onclick="selectMode(0)" id="tab-0" class="tab-btn flex-1 py-2 rounded-xl text-sm font-bold bg-white text-forest shadow-sm transition">
-            Fokus
-          </button>
-
-          <button onclick="selectMode(1)" id="tab-1" class="tab-btn flex-1 py-2 rounded-xl text-sm font-medium text-muted transition">
-            Istirahat Pendek
-          </button>
-
-          <button onclick="selectMode(2)" id="tab-2" class="tab-btn flex-1 py-2 rounded-xl text-sm font-medium text-muted transition">
-            Istirahat Panjang
-          </button>
+          <button onclick="selectMode(0)" id="tab-0" class="tab-btn flex-1 py-2 rounded-xl text-sm font-bold bg-white text-forest shadow-sm transition">Focus</button>
+          <button onclick="selectMode(1)" id="tab-1" class="tab-btn flex-1 py-2 rounded-xl text-sm font-medium text-muted transition">Short Break</button>
+          <button onclick="selectMode(2)" id="tab-2" class="tab-btn flex-1 py-2 rounded-xl text-sm font-medium text-muted transition">Long Break</button>
         </div>
 
         <!-- Timer Circle -->
         <div class="bg-moss rounded-3xl py-10 px-6 flex flex-col items-center">
-
           <div class="relative w-48 h-48 mb-6">
-
             <svg width="192" height="192" class="-rotate-90">
               <circle cx="96" cy="96" r="80" fill="none" stroke="#D6E8CE" stroke-width="10"/>
               <circle id="timerCircle" cx="96" cy="96" r="80" fill="none"
@@ -196,84 +155,49 @@
                 stroke-linecap="round"
                 style="transition: stroke-dashoffset 0.5s ease"/>
             </svg>
-
             <div class="absolute inset-0 flex flex-col items-center justify-center">
-              <span id="timerDisplay" class="text-4xl font-extrabold text-forest tracking-tight">
-                25:00
-              </span>
-
-              <span id="modeLabel" class="text-xs text-muted font-semibold mt-1">
-                Fokus
-              </span>
+              <span id="timerDisplay" class="text-4xl font-extrabold text-forest tracking-tight">25:00</span>
+              <span id="modeLabel" class="text-xs text-muted font-semibold mt-1">Focus</span>
             </div>
-
           </div>
-
           <div class="flex gap-3">
-
             <button id="startBtn" onclick="toggleTimer()" class="bg-sage text-white font-bold px-9 py-3 rounded-2xl text-base hover:bg-sageDark transition shadow-md">
-              ▶ Mulai
+              ▶ Start
             </button>
-
             <button onclick="resetTimer()" class="bg-white text-muted border border-mint font-semibold px-5 py-3 rounded-2xl text-base hover:bg-moss transition">
               ↺
             </button>
-
           </div>
-
         </div>
 
         <!-- Quote Box -->
         <div class="bg-moss rounded-2xl p-5 relative">
-
           <p id="quoteText" class="text-forest italic text-sm leading-relaxed mb-2">
-            "Rahasia untuk maju adalah memulai."
+            "The secret of getting ahead is getting started."
           </p>
-
-          <p id="quoteAuthor" class="text-muted text-xs font-semibold">
-            — Mark Twain
-          </p>
-
-          <button onclick="fetchQuote()" class="absolute top-3 right-4 text-muted text-lg hover:text-sage transition" title="Quote baru">
-            ↻
-          </button>
-
+          <p id="quoteAuthor" class="text-muted text-xs font-semibold">— Mark Twain</p>
+          <button onclick="fetchQuote()" class="absolute top-3 right-4 text-muted text-lg hover:text-sage transition" title="New quote">↻</button>
         </div>
 
       </div>
 
       <!-- Todo Column -->
       <div class="flex flex-col flex-1 min-w-[280px] bg-moss rounded-2xl p-6">
-
-        <h3 class="font-bold text-base mb-4">
-          📋 Tugas Sesi
-        </h3>
-
+        <h3 class="font-bold text-base mb-4">📋 Session Tasks</h3>
         <div class="flex gap-2 mb-4">
-
-          <input id="taskInput" type="text" placeholder="Tambahkan tugas..."
+          <input id="taskInput" type="text" placeholder="Add a task..."
             class="flex-1 px-4 py-2 rounded-xl border border-mint bg-white text-forest text-sm outline-none focus:border-sage transition"
             onkeydown="if(event.key==='Enter') addTask()"/>
-
-          <button onclick="addTask()" class="bg-sage text-white font-bold px-4 py-2 rounded-xl text-lg hover:bg-sageDark transition">
-            +
-          </button>
-
+          <button onclick="addTask()" class="bg-sage text-white font-bold px-4 py-2 rounded-xl text-lg hover:bg-sageDark transition">+</button>
         </div>
-
         <div id="taskList" class="flex flex-col gap-2">
-          <p id="emptyMsg" class="text-muted text-sm text-center py-4">
-            Belum ada tugas. Tambahkan satu di atas! 🌱
-          </p>
+          <p id="emptyMsg" class="text-muted text-sm text-center py-4">No tasks yet. Add one above! 🌱</p>
         </div>
-
       </div>
 
     </div>
-
   </section>
 
   <script src="script.js"></script>
-
 </body>
 </html>

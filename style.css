@@ -1,3 +1,4 @@
+/* ===== GLOBAL ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,14 +9,17 @@ body {
   background-color: #F5F5EE;
 }
 
+/* ===== PAGE TOGGLE ===== */
 .hidden {
   display: none !important;
 }
 
+/* ===== TIMER CIRCLE STROKE COLORS PER MODE ===== */
 .stroke-focus   { stroke: #87A878; }
 .stroke-short   { stroke: #7BAFC4; }
 .stroke-long    { stroke: #A89078; }
 
+/* ===== TAB ACTIVE STATE ===== */
 .tab-btn.active {
   background-color: white;
   color: #2D4A22;
@@ -29,7 +33,7 @@ body {
   font-weight: 500;
 }
 
-
+/* ===== TASK ITEM ===== */
 .task-item {
   display: flex;
   align-items: center;
@@ -76,9 +80,40 @@ body {
   color: #b05555;
 }
 
+/* ===== QUOTE BOX ===== */
 #quoteText {
   transition: opacity 0.3s ease;
 }
+
+/* ===== FEATURES GRID ===== */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+  }
+}
+
+/* ===== QUOTE ERROR ===== */
+.quote-error {
+  color: #C97B7B;
+  font-style: italic;
+  font-size: 13px;
+}
+
 
 @media (max-width: 640px) {
   nav {
